@@ -29,6 +29,7 @@ epsilon = 5
 first_day = convert_date_to_id("2022-01-01", con)
 last_day = convert_date_to_id("2022-12-31", con)
 
+
 # ----- Barchart: Original release dates -----
 print("Generating Barchart with release dates: original")
 generate_barchart_of_release_dates(df = get_all_audits(con), 

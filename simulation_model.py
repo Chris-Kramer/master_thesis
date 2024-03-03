@@ -251,6 +251,10 @@ for day in range(first_day, last_day + 1):
                         model.cbLazy(gp.quicksum(model._vars[S[i][j][0], S[i][j][1], e] for j in range(len(S[i]))) <= len(S[i])-1)
 
     def get_subtours(r0):
+        """
+        This code is adapted from the sub-tour elimination procedure at this website:
+        https://medium.com/swlh/techniques-for-subtour-elimination-in-traveling-salesman-problem-theory-and-implementation-in-71942e0baf0c   
+        """
         r=copy.copy(r0)
         route = []
         while len(r) != 0:

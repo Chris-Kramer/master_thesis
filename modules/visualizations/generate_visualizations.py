@@ -7,6 +7,12 @@ def generate_barchart_of_release_dates(df: pd.DataFrame,
                                        first_day: int,
                                        last_day: int,
                                        con:sqlite3.Connection) -> px.bar:
+    """
+    Takes a dataframe containing all audits and generates a barchart showing the distribution of release dates.
+    The barchart only displays dates between first_day and last day.
+    The return value is a plotly figure. 
+    """
+    
     df["release_date_id"] = df["release_date_id"].astype(int)
     dates_tbl = pd.read_sql("SELECT * FROM dates", con)
     dates_tbl["ID"] = dates_tbl["ID"].astype(int)

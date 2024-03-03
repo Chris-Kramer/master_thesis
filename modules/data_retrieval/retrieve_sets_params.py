@@ -107,6 +107,7 @@ def get_employees(con:sqlite3.Connection) -> list[int]:
         employees = cur.execute("SELECT ID FROM employees").fetchall()
     return [em[0] for em in employees]
 
+
 def get_vehicles(con:sqlite3.Connection) -> list[int]:
     """
     Returns a list of vehicles
@@ -154,6 +155,7 @@ def get_processing_times(audits: pd.DataFrame) -> dict[int, int]:
     for _, i in enumerate(audits):
         p[i] = durations[_]
     return p
+
 
 def get_due_dates(audits: pd.DataFrame) -> dict[int, int]:
     """

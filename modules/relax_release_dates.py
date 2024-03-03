@@ -11,14 +11,20 @@ def relax_release_dates(phi: int,
                         first_day: int,
                         last_day: int,
                         con: sqlite3.Connection) -> pd.DataFrame:
+    """
+    Takes a dataframe which contains all audits an returns a dataframe.
+    The returned data have had its release dates redistributed according to 
+    episolon and phi.
+    """
     for day in range(first_day, last_day + 1):
+
+        # Sort audits and get audits on the given day
         all_audits = all_audits.sort_values(by = ["due_date_id", "duration", "priority_before_audit"], ascending= [True, False, False])
         all_audits = all_audits.reset_index(drop = True)
         day_audits = all_audits[(all_audits["release_date_id"] == day)].reset_index(drop = True).copy()
-
         all_audits = all_audits[(all_audits["release_date_id"] != day)].reset_index(drop = True)
         
-        max_cap = utils.get_max_dict_value(get_sets_params.get_daily_employee_capacity(day, con))
+        # If it is not a work day push release dates until nearest work day
         day_type = date_utils.get_day_type(day, con)
         if day_type != "workday":
             i = 1
@@ -36,6 +42,7 @@ def relax_release_dates(phi: int,
             edit_day["release_date_id"] = edit_day["release_date_id"] + i
             all_audits = pd.concat([all_audits, edit_day, non_edit])
         
+        # If it is a work day push audits release date to next date
         else:
             non_edit = day_audits[day_audits["due_date_id"] <= (day - epsilon)].copy()
             edit_day = day_audits[day_audits["due_date_id"] > (day - epsilon)].copy()

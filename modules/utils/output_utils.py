@@ -11,6 +11,7 @@ import modules.data_retrieval.retrieve_sets_params as get_sets_params
 # Relax release dates
 from modules.relax_release_dates import relax_release_dates
 
+
 ##############################################
 # Helper Functions for The output dictionary #
 ##############################################
@@ -43,6 +44,7 @@ def update_res_dict(results_dict: dict[int],
         results_dict[day][auditor]["audits"] = audits                      
     
     return results_dict
+
 
 ###################
 # Output CSV-file #

@@ -61,7 +61,7 @@ def get_travel_time_matrix(audits: pd.DataFrame,
     distance_matrix = {
     }
 
-    distances = (haversine_distances(locations) * (6371000/1000)) / km_pr_hour
+    distances = (haversine_distances(locations) * 6371) / km_pr_hour
     for i, id_1 in enumerate([*depots, *physical_audits["ID"]]):
         distance_matrix[id_1]= {}
         for j, id_2 in enumerate([*depots, *physical_audits["ID"]]):

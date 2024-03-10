@@ -96,7 +96,7 @@ for day in range(first_day, last_day + 1):
     # Get audits
     daily_audits = sim_audits[(sim_audits["release_date_id"] <= day) &
                               (sim_audits["release_date_id"] >= first_day) &
-                              (sim_audits["audit_date_id"].isna())]
+                              (sim_audits["audit_date_id"] < 0)]
     
     # Is it a workday and is there any audits?
     if daily_audits.shape[0] == 0:

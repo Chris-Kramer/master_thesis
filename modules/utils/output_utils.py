@@ -61,7 +61,7 @@ def generate_simulation_dataframe(con: sqlite3.Connection,
     all_audits = all_audits[~((all_audits["zip_code"] >= 3700) & (all_audits["zip_code"] <= 3799))]
     all_audits = all_audits[all_audits["audit_type_id"] != 9]
     sim_audits = all_audits.copy()
-    sim_audits["audit_date_id"] = np.nan
+    sim_audits["audit_date_id"] = -1
     sim_audits["employee_id"] = np.nan
     return relax_release_dates(phi, epsilon, sim_audits, first_day, last_day, con)
     

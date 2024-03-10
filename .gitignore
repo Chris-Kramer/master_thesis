@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 .venv
+final_database*
 
 # Distribution / packaging
 .Python

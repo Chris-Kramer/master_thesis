@@ -46,11 +46,13 @@ sim_df = generate_simulation_dataframe(con = con,
                                        first_day = first_day,
                                        last_day = last_day)
 
-generate_barchart_of_release_dates(df = sim_df, 
+fig = generate_barchart_of_release_dates(df = sim_df, 
                                    y_axis_range = 461,
                                    first_day = first_day,
                                    last_day = last_day,
-                                   con = con).write_html("outputs/imgs/barchart_phi_100.html")
+                                   con = con)
+fig.add_hline(y=100)
+fig.write_html("outputs/imgs/barchart_phi_100.html")
 
 # ----- Barchart: phi = 50 -----
 print("Generating Barchart with release dates: phi = 50")
@@ -60,11 +62,13 @@ sim_df = generate_simulation_dataframe(con = con,
                                        first_day = first_day,
                                        last_day = last_day)
 
-generate_barchart_of_release_dates(df = sim_df, 
+fig = generate_barchart_of_release_dates(df = sim_df, 
                                    y_axis_range = 461,
                                    first_day = first_day,
                                    last_day = last_day,
-                                   con = con).write_html("outputs/imgs/barchart_phi_50.html")
+                                   con = con)
+fig.add_hline(y=50)
+fig.write_html("outputs/imgs/barchart_phi_50.html")
 
 # ----- Barchart: phi = 15 -----
 print("Generating Barchart with release dates: phi = 15")
@@ -74,12 +78,13 @@ sim_df = generate_simulation_dataframe(con = con,
                                        first_day = first_day,
                                        last_day = last_day)
 
-generate_barchart_of_release_dates(df = sim_df, 
+fig = generate_barchart_of_release_dates(df = sim_df, 
                                    y_axis_range = 461,
                                    first_day = first_day,
                                    last_day = last_day,
-                                   con = con).write_html("outputs/imgs/barchart_phi_15.html")
-
+                                   con = con)
+fig.add_hline(y=15)
+fig.write_html("outputs/imgs/barchart_phi_15.html")
 
 # ----- Barchart: phi = 6 -----
 print("Generating Barchart with release dates: phi = 6")
@@ -89,15 +94,18 @@ sim_df = generate_simulation_dataframe(con = con,
                                        first_day = first_day,
                                        last_day = last_day)
 
-generate_barchart_of_release_dates(df = sim_df, 
+fig = generate_barchart_of_release_dates(df = sim_df, 
                                    y_axis_range = 461,
                                    first_day = first_day,
                                    last_day = last_day,
-                                   con = con).write_html("outputs/imgs/barchart_phi_6.html")
+                                   con = con)
+fig.add_hline(y=6)
+fig.write_html("outputs/imgs/barchart_phi_6.html")
 
 ########
 # Maps #
 ########
+
 print("--------------- Routing maps -------------------")
 
 # ----- Get Data -----
@@ -381,7 +389,6 @@ fig.update_layout(mapbox_style="carto-positron")
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.write_html("outputs/imgs/dga_routing.html")
 
-
 ###############
 # Gantt Chart #
 ###############
@@ -437,6 +444,7 @@ print("Generating chart")
 all_audits = all_audits[all_audits["year"] >= 2020]
 all_audits = all_audits[all_audits["year"] <= 2025]
 fig = px.bar(all_audits, y = "sum", x="year", text_auto=True)
+fig.update_layout(yaxis_range=[0, 25000])
 fig.add_hline(y=19800) # 19800 is the maximum capacity
 fig.write_html("outputs/imgs/yearly_audit_duration_barchart.html")
 

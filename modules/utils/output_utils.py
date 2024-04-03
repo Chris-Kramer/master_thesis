@@ -46,6 +46,24 @@ def update_res_dict(results_dict: dict[int],
     return results_dict
 
 
+def generate_auditor_dict(E: list[int]) -> dict[int, float]:
+    """
+    Returns a dictionary for each auditor
+    """
+    return_dict = {}
+    for e in E:
+        return_dict[e] = 0
+    return return_dict
+
+def generate_day_dict(first_day, last_day) -> dict[int, float]:
+    """
+    Returns a dictionary for each auditor
+    """
+    return_dict = {}
+    for t in range(first_day, last_day + 1):
+        return_dict[t] = 0
+    return return_dict
+
 ###################
 # Output CSV-file #
 ###################
@@ -53,7 +71,8 @@ def generate_simulation_dataframe(con: sqlite3.Connection,
                                   phi: int,
                                   epsilon: int,
                                   first_day: int,
-                                  last_day:int) -> pd.DataFrame:
+                                  last_day:int,
+                                  extend_horizon: bool = False) -> pd.DataFrame:
     """
     Is a wrapper for the function relax_release_dates.
     """
@@ -63,5 +82,5 @@ def generate_simulation_dataframe(con: sqlite3.Connection,
     sim_audits = all_audits.copy()
     sim_audits["audit_date_id"] = -1
     sim_audits["employee_id"] = np.nan
-    return relax_release_dates(phi, epsilon, sim_audits, first_day, last_day, con)
+    return relax_release_dates(phi, epsilon, sim_audits, first_day, last_day, con, extend_horizon)
     

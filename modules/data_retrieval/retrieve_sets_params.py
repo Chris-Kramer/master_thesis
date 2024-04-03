@@ -136,6 +136,13 @@ def get_on_site_audits(audits: pd.DataFrame) -> list[int]:
     return [*audits[audits["on_site_audit"] == 1]["ID"]]
 
 
+def get_desk_audits(audits: pd.DataFrame) -> list[int]:
+    """
+    Returns a list of desk audits
+    """
+    return [*audits[audits["on_site_audit"] == 0]["ID"]]
+
+
 def get_audits_as_list(audits: pd.DataFrame) -> list[int]:
     """
     Returns a list of on-site audits, which represents V
@@ -170,6 +177,19 @@ def get_due_dates(audits: pd.DataFrame) -> dict[int, int]:
     return d
 
 
+def get_release_dates(audits: pd.DataFrame) -> dict[int, int]:
+    """
+    Returns a dictionary of release dates which represent r_i
+    """
+    tasks = audits["ID"].to_list()
+    release_dates = audits["release_date_id"].astype(int).to_list()
+    
+    r = {}
+    for task, release_date in zip(tasks, release_dates):
+        r[task] = release_date
+    return r
+
+
 def get_daily_employee_capacity(date_id: str,
                                 con: sqlite3.Connection) -> pd.DataFrame:
     """
@@ -188,7 +208,7 @@ def get_daily_employee_capacity(date_id: str,
     return q
 
 
-def get_objective_val(due_dates: list[int], t: int) -> dict[int, int]:
+def get_objective_val(due_dates: dict[int], t: int) -> dict[int, int]:
     """
     Returns a dictionary which contains the difference between a list of due dates and the current date t.
     This represents u_i

@@ -10,7 +10,8 @@ def relax_release_dates(phi: int,
                         all_audits: pd.DataFrame,
                         first_day: int,
                         last_day: int,
-                        con: sqlite3.Connection) -> pd.DataFrame:
+                        con: sqlite3.Connection,
+                        extend_horizon: bool = False) -> pd.DataFrame:
     """
     Takes a dataframe which contains all audits an returns a dataframe.
     The returned data have had its release dates redistributed according to 
@@ -33,11 +34,17 @@ def relax_release_dates(phi: int,
                 day_type = date_utils.get_day_type(day + i, con)
                 i += 1            
 
+            if extend_horizon:
+                non_edit = day_audits[(day_audits["due_date_id"] + i <= (day - epsilon))].copy()
+                edit_day = day_audits[~(day_audits["due_date_id"] + i <= (day - epsilon))].copy()
+                edit_day = edit_day.reset_index(drop = True)
+                non_edit = non_edit.reset_index(drop = True)
 
-            non_edit = day_audits[(day_audits["due_date_id"] + i <= (day - epsilon)) | (day_audits["release_date_id"] + i > last_day)].copy()
-            edit_day = day_audits[~((day_audits["due_date_id"] + i <= (day - epsilon)) | (day_audits["release_date_id"] + i > last_day))].copy()
-            edit_day = edit_day.reset_index(drop = True)
-            non_edit = non_edit.reset_index(drop = True)
+            else:
+                non_edit = day_audits[(day_audits["due_date_id"] + i <= (day - epsilon)) | (day_audits["release_date_id"] + i > last_day)].copy()
+                edit_day = day_audits[~((day_audits["due_date_id"] + i <= (day - epsilon)) | (day_audits["release_date_id"] + i > last_day))].copy()
+                edit_day = edit_day.reset_index(drop = True)
+                non_edit = non_edit.reset_index(drop = True)
 
             edit_day["release_date_id"] = edit_day["release_date_id"] + i
             all_audits = pd.concat([all_audits, edit_day, non_edit])

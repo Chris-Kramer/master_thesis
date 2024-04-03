@@ -70,6 +70,34 @@ def get_travel_time_matrix(audits: pd.DataFrame,
     return distance_matrix
 
 
+def get_distance_matrix(audits: pd.DataFrame,
+                        depots: list[int],
+                        con: sqlite3.Connection) -> dict[dict[float]]:
+    """
+    Returns the distance matrix in kilometers.
+    """
+    physical_audits = audits[audits["on_site_audit"] == 1]
+    locations = []
+    for depot in depots:
+        for _, coords in utils.get_lat_long(con, depot).items():
+            locations.append([radians(coord) for coord in coords])
+                
+
+    for i, row in physical_audits.iterrows():
+        locations.append([radians(row["long"]), radians(row["lat"])])
+
+    distance_matrix = {
+    }
+
+    distances = (haversine_distances(locations) * 6371)
+    for i, id_1 in enumerate([*depots, *physical_audits["ID"]]):
+        distance_matrix[id_1]= {}
+        for j, id_2 in enumerate([*depots, *physical_audits["ID"]]):
+            distance_matrix[id_1][id_2] = distances[i][j]
+    
+    return distance_matrix
+
+
 def get_accomplice_matrix(audits: pd.DataFrame,
                           con: sqlite3.Connection) -> dict[int, dict[int, int]]:
     """

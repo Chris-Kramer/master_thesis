@@ -1,0 +1,719 @@
+
+ ############################ Day 8037 ################################### 
+
+ No Audits Available 
+
+ ############################ Day 8038 ################################### 
+
+ No Audits Available 
+
+ ############################ Day 8039 ################################### 
+
+ N AUDITS: 14 
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 1 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 2 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 3 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 4 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 5 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 6 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 7 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 8 ###### 
+
+Availability: 10 
+Total Audit Time: 2.558333333333333 
+Total Travel Time: 7.052675967837504 
+Total Time: 9.611009301170837 
+ 
+ - AUDITS 
+	 - Audit: 47758 
+	 - Audit: 47866 
+	 - Audit: 47047 
+	 - Audit: 46983 
+
+ - ROUTE
+	 - FROM 47758 --> 4 
+	 - FROM 47866 --> 47047 
+	 - FROM 47047 --> 47758 
+	 - FROM 46983 --> 47866 
+	 - FROM 4 --> 46983 
+
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 9 ###### 
+
+Availability: 10 
+Total Audit Time: 1.4333333333333331 
+Total Travel Time: 8.306020718047037 
+Total Time: 9.73935405138037 
+ 
+ - AUDITS 
+	 - Audit: 48011 
+	 - Audit: 48013 
+	 - Audit: 48014 
+	 - Audit: 48016 
+
+ - ROUTE
+	 - FROM 48011 --> 48014 
+	 - FROM 48013 --> 48016 
+	 - FROM 48014 --> 4 
+	 - FROM 48016 --> 48011 
+	 - FROM 4 --> 48013 
+
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 10 ###### 
+
+Availability: 10 
+Total Audit Time: 2.45 
+Total Travel Time: 6.17799155667044 
+Total Time: 8.627991556670441 
+ 
+ - AUDITS 
+	 - Audit: 48005 
+	 - Audit: 48007 
+	 - Audit: 48024 
+	 - Audit: 48021 
+	 - Audit: 47173 
+	 - Audit: 48018 
+
+ - ROUTE
+	 - FROM 48005 --> 47173 
+	 - FROM 48007 --> 48005 
+	 - FROM 48024 --> 4 
+	 - FROM 48021 --> 48018 
+	 - FROM 47173 --> 48021 
+	 - FROM 48018 --> 48024 
+	 - FROM 4 --> 48007 
+
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 11 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 12 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 13 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 14 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.11666666666666667 
+
+##### AUDITOR: 15 ###### 
+
+Availability: 10 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ ############################ Day 8040 ################################### 
+
+ N AUDITS: 15 
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 1 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 2 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 3 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 4 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 5 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 6 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 7 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 8 ###### 
+
+Availability: 9 
+Total Audit Time: 1.25 
+Total Travel Time: 0 
+Total Time: 1.25 
+ 
+ - AUDITS 
+	 - Audit: 62306 
+	 - Audit: 62309 
+	 - Audit: 62311 
+	 - Audit: 62312 
+	 - Audit: 62315 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 9 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 10 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 11 ###### 
+
+Availability: 9 
+Total Audit Time: 1.4583333333333333 
+Total Travel Time: 7.252453589582357 
+Total Time: 8.710786922915691 
+ 
+ - AUDITS 
+	 - Audit: 48056 
+	 - Audit: 48061 
+	 - Audit: 47359 
+	 - Audit: 46800 
+
+ - ROUTE
+	 - FROM 48056 --> 48061 
+	 - FROM 48061 --> 47359 
+	 - FROM 47359 --> 46800 
+	 - FROM 46800 --> 1 
+	 - FROM 1 --> 48056 
+
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 12 ###### 
+
+Availability: 9 
+Total Audit Time: 2.2583333333333333 
+Total Travel Time: 6.227299607285255 
+Total Time: 8.485632940618588 
+ 
+ - AUDITS 
+	 - Audit: 44073 
+	 - Audit: 47736 
+	 - Audit: 51192 
+	 - Audit: 51194 
+
+ - ROUTE
+	 - FROM 44073 --> 51192 
+	 - FROM 47736 --> 44073 
+	 - FROM 51192 --> 51194 
+	 - FROM 51194 --> 1 
+	 - FROM 1 --> 47736 
+
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 13 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 14 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.15129030492852819 
+
+##### AUDITOR: 15 ###### 
+
+Availability: 9 
+Total Audit Time: 0.5 
+Total Travel Time: 0 
+Total Time: 0.5 
+ 
+ - AUDITS 
+	 - Audit: 62308 
+	 - Audit: 62313 
+
+ - ROUTE
+
+ ############################ Day 8041 ################################### 
+
+ N AUDITS: 15 
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 1 ###### 
+
+Availability: 9 
+Total Audit Time: 1.1 
+Total Travel Time: 7.880852287547201 
+Total Time: 8.9808522875472 
+ 
+ - AUDITS 
+	 - Audit: 51218 
+	 - Audit: 52628 
+	 - Audit: 47995 
+
+ - ROUTE
+	 - FROM 51218 --> 52628 
+	 - FROM 52628 --> 3 
+	 - FROM 47995 --> 51218 
+	 - FROM 3 --> 47995 
+
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 2 ###### 
+
+Availability: 9 
+Total Audit Time: 2.45 
+Total Travel Time: 1.047704102178511 
+Total Time: 3.497704102178511 
+ 
+ - AUDITS 
+	 - Audit: 47988 
+	 - Audit: 47991 
+	 - Audit: 46997 
+	 - Audit: 47986 
+	 - Audit: 47987 
+	 - Audit: 47994 
+
+ - ROUTE
+	 - FROM 47988 --> 47994 
+	 - FROM 47991 --> 47986 
+	 - FROM 46997 --> 47988 
+	 - FROM 47986 --> 46997 
+	 - FROM 47987 --> 47991 
+	 - FROM 47994 --> 3 
+	 - FROM 3 --> 47987 
+
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 3 ###### 
+
+Availability: 9 
+Total Audit Time: 5.483333333333333 
+Total Travel Time: 0.8588014286987844 
+Total Time: 6.342134762032118 
+ 
+ - AUDITS 
+	 - Audit: 47990 
+	 - Audit: 34976 
+
+ - ROUTE
+	 - FROM 47990 --> 3 
+	 - FROM 3 --> 47990 
+
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 4 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 5 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 6 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 7 ###### 
+
+Availability: 9 
+Total Audit Time: 6.694666666666667 
+Total Travel Time: 0 
+Total Time: 6.694666666666667 
+ 
+ - AUDITS 
+	 - Audit: 34982 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 8 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 9 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 10 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 11 ###### 
+
+Availability: 9 
+Total Audit Time: 5 
+Total Travel Time: 0 
+Total Time: 5 
+ 
+ - AUDITS 
+	 - Audit: 34995 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 12 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 13 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 14 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+ - Objective value: 0.09265424118365294 
+
+##### AUDITOR: 15 ###### 
+
+Availability: 9 
+Total Audit Time: 0 
+Total Travel Time: 0 
+Total Time: 0 
+ 
+ - AUDITS 
+
+ - ROUTE
+
+
+ ############## Performance Measures ########## 
+
+- Fairness: 0.1531 
+- Schedule Score: 0.0235 
+- Make-span: 8041 
+- Weighted Make-span: 377843 
+- Simulated Flow time: 0 
+- Simulated Mean Flow time: 0.0 days 
+- Original Flow time: 57 
+- Original Mean Flow time: 1.36 days 
+- Total Throughput: 42 audits 
+- Total Audit Duration: 14.19 hours 
+- Total Km Travelled: 3584.3 km. 
+- Normalized Km Travelled: 252.56 km. pr. audit hour 
+- Total petrol consumption: 238.95 liters 
+- Normalized petrol consumption: 15.0 liters pr. audit hour.
+- Total CO2 Emissions: 551.98 kg. 
+- Normalized CO2 Emissions: 6.49 kg. pr. audit hour. 
+- Total Travel Time: 44.8 hours 
+- Normalized Travel Time: 3.16 hours pr. audit hour. 
+ 
+--- 660.1922891139984 seconds to run ---
